@@ -1,0 +1,8 @@
+
+<h1><%= @users.nick%></h1>
+<br>
+<ul>
+  <% @users.messages.each do |message| %>
+  <li> <%= message.content %></li>
+  <% end %>
+</ul>
